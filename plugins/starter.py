@@ -43,7 +43,7 @@ def process_message(data):
 		
     elif p_bot_search.match(data['text']):
 	txt = "Initiating Search....."
-	attachments.append([data['channel'], txt, build_demo_attachment(txt)])
+	attachments.append([data['channel'], txt])
 
     elif data['text'].startswith("pybot"):
         outputs.append([data['channel'], "I'm sorry, I don't know how to: `{}`".format(data['text'])])
